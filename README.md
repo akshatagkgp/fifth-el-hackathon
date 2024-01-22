@@ -7,21 +7,21 @@ We have designed a Music Assistant called Musickiya that will help music produce
 ## Applications
 Producing and mixing a song in a DAW can take quite some time ranging from a few hours to as long as a few weeks. It’s an art that takes about 4-5 years to master and still would require a lot of thinking and experimentation to get the right sounding one.
 Some common activities that are performed in a DAW are:
-Digital audio processor (record, edit, and mix audio digitally) 
-MIDI sequencer (record, edit and mix MIDI notes) 
-Virtual instruments (receives MIDI info and translates it to different instrument sounds) 
-Music notation (turn MIDI notes into printable sheet music)
-Sampling a beat from a piece of sound.
+ - Digital audio processor (record, edit, and mix audio digitally) 
+ - MIDI sequencer (record, edit and mix MIDI notes) 
+ - Virtual instruments (receives MIDI info and translates it to different instrument sounds) 
+ - Music notation (turn MIDI notes into printable sheet music)
+ - Sampling a beat from a piece of sound.
 and many more.
 Specifically, activities like figuring out the right virtual instrument, preset etc. that matches the feeling that the producer has for the song can be time taking and manual process. Also, buying costly sound engineered sample packs can be a turn off for budding producers. 
 An AI assistant can help with these bottlenecks and speed up the production time by at least 10x. Also, the integration of this assistant will be pretty simple with their traditional workflow as it will only just help with the mundane and repetitive manual processes.
 Specifically, the functionalities of the assistant are:
-Audio to Audio Generation: Convert one piece of music like a chord progression in guitar to another instrument like piano conditioned by a prompt.
-Chords (Text/MIDI) to Audio Generation: Convert chords in text or MIDI format like a chord progression in guitar to another instrument like piano conditioned by a prompt.
-Prompt to Audio Generation: Get samples of music directly using a prompt.
-Lyrics Generation: Get lyrics using a prompt.
-Lyrics to Vocal Generation: AI sings the given lyrics and small clip of singing to replicate voice 
-Noise Reduction: Suppress noise in the given noisy audio.
+ - Audio to Audio Generation: Convert one piece of music like a chord progression in guitar to another instrument like piano conditioned by a prompt.
+ - Chords (Text/MIDI) to Audio Generation: Convert chords in text or MIDI format like a chord progression in guitar to another instrument like piano conditioned by a prompt.
+ - Prompt to Audio Generation: Get samples of music directly using a prompt.
+ - Lyrics Generation: Get lyrics using a prompt.
+ - Lyrics to Vocal Generation: AI sings the given lyrics and small clip of singing to replicate voice 
+ - Noise Reduction: Suppress noise in the given noisy audio.
 If we talk about scalability, this AI assistant will have AI models backing it which can run in the cloud or even on premise too as DAW’s GUI and some plugins are already GPU-accelerated. The assistant will stream the audio generated directly in the GUI for the user to review quickly. The proposed solution is scalable across devices along with multiple suggestions for a given use case. As per the initial experiments, it takes ~30 sec to generate 30 seconds of music. This amount can be reduced further after some optimisations.
 ## Solution
 We will develop our own plugin for one of the DAWs out there and integration our python programme with it.
